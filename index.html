@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Horas Sociales</title>
+  <link rel="stylesheet" type="text/css" href="style.css">                    
+</head>
+<body>
+
+    <div class="Caja2">
+        <h1>Registro de Horas Sociales</h1>
+
+        <div class="Cuadro1">
+          <form action="registro.php" method="POST">
+              <label for="nombre">Nombre:</label><br>
+              <input type="text" id="nombre" name="nombre" required><br><br>
+          
+              <label for="horas">Horas dedicadas:</label><br>
+              <input type="number" id="horas" name="horas" min="1" required><br><br>
+          
+              <label for="descripcion">Descripción de las actividades:</label><br>
+              <textarea id="descripcion" name="descripcion" rows="4" required></textarea><br><br>
+          
+              <input type="submit" value="Enviar">
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>
