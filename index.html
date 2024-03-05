@@ -1,32 +1,42 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Registro de Horas Sociales</title>
-  <link rel="stylesheet" type="text/css" href="style.css">                    
+  <title>Login Form | Dan Aleko</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+  <div class="wrapper">
+    <form action="">
+      <h1>Plataforma Horas Sociales</h1>
+      <div class="contenedor">
+        <img src="Escudo_colegio-removebg-preview.png">
+      </div>
 
-    <div class="Caja2">
-        <h1>Registro de Horas Sociales</h1>
 
-        <div class="Cuadro1">
-          <form action="registro.php" method="POST">
-              <label for="nombre">Nombre:</label><br>
-              <input type="text" id="nombre" name="nombre" required><br><br>
-          
-              <label for="horas">Horas dedicadas:</label><br>
-              <input type="number" id="horas" name="horas" min="1" required><br><br>
-          
-              <label for="descripcion">Descripción de las actividades:</label><br>
-              <textarea id="descripcion" name="descripcion" rows="4" required></textarea><br><br>
-          
-              <input type="submit" value="Enviar">
-            </form>
-        </div>
-
-    </div>
-
+      <div class="input-box">
+        <input type="text" placeholder="Usuario" required>
+        <i class='bx bxs-user'></i>
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="Password" required>
+        <i class='bx bxs-lock-alt' ></i>
+      </div>
+      <div class="remember-forgot">
+        <label><input type="checkbox">Remember Me</label>
+        <a href="#">Forgot Password</a>
+      </div>
+      <button>
+        <span>Acceder</span>
+      </button>      
+      <div class="register-link">
+        <button class="btn1">
+          <span>Informacion</span>
+        </button>
+      </div>
+    </form>
+  </div>
 </body>
 </html>
