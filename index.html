@@ -9,29 +9,31 @@
 </head>
 <body>
   <div class="wrapper">
-    <form action="">
+    <form action="Tabla_Horas_Sociales.html" method="http://127.0.0.1:5500/Tabla_Horas_Sociales.html"> <!-- Añadido method="POST" y action="#" -->
       <h1>Plataforma Horas Sociales</h1>
       <div class="contenedor">
         <img src="Escudo_colegio-removebg-preview.png" alt="Escudo del colegio">
       </div>
 
       <div class="input-box">
-        <input type="text" placeholder="Usuario" required>
+        <input type="text" name="usuario" placeholder="Usuario" required> <!-- Añadido name="usuario" -->
         <i class='bx bxs-user'></i>
       </div>
 
       <div class="input-box">
-        <input type="password" placeholder="Password" required>
+        <input type="password" name="password" placeholder="Password" required> <!-- Añadido name="password" -->
         <i class='bx bxs-lock-alt'></i>
       </div>
 
       <div class="remember-forgot">
-        <label><input type="checkbox">Recordarme</label>
+        <label><input type="checkbox" name="recordar">Recordarme</label> <!-- Añadido name="recordar" -->
         <a href="#">¿Olvidaste tu contraseña?</a>
       </div>
+      
+      <a href="Tabla_Horas_Sociales.html">
 
-      <button type="submit" class="btn">Iniciar sesión</button>
-
+      <button type="submit" class="btn">Iniciar sesión</button> <!-- Movido el botón dentro de <form> -->
+    </a>
       <div class="register-link">
         <a href="Informacion.html">Información</a>
       </div>
